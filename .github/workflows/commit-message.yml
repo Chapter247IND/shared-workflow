@@ -8,6 +8,6 @@ jobs:
       - name: Check Commit Type
         uses: gsactions/commit-message-checker@v2
         with:
-          pattern: 'feat|fix|chore|test|ci|build|docs|style|refactor|perf'
+          pattern: 'feat|fix|chore|test|ci|build|docs|style|refactor|perf|(^Merge pull request)'
           flags: "gm"
           error: 'All commit messages should follow semantic/conventional commit syntax, learn more about semantic commit here: https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716'
